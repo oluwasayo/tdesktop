@@ -151,8 +151,7 @@ std::unique_ptr<Window::Notifications::Manager> Create(Window::Notifications::Sy
 	return nullptr;
 }
 
-void FlashBounce() {
-	[NSApp requestUserAttention:NSInformationalRequest];
+inline void FlashBounce() {
 }
 
 class Manager::Private : public QObject, private base::Subscriber {
